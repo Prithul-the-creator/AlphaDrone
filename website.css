@@ -1,0 +1,87 @@
+/* Set a background image for the entire page */
+body {
+    background-image: url('drone_image.jpg');
+    background-size: cover; /* This will make sure the image covers the whole page */
+    background-position: center center; /* This will center the image in the page */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    height: 100vh; /* This makes sure that the body covers the whole viewport height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px; /* Adjust based on your logo's size */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.text-box {
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White background with opacity */
+    margin: 0; /* Remove any margin to align with the page's edge */
+    font-family: 'Times New Roman', Times, serif; /* A classic, formal font choice */
+    color: #333; /* A darker color for better readability */
+}
+
+
+.scientific-text {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: normal; /* Keeps it less bold, more formal */
+    line-height: 1.5; /* Improves readability */
+    font-weight: bold;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  
+  /* Apply the animation to the text-box */
+  .text-box.fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  .text-box.slide-in {
+    animation: slideIn 2s ease-out forwards;
+  }
+
+
+
+  

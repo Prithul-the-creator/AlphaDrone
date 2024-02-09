@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="C:\Users\prith\Coding\fifth_logo.jpeg" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <!-- Content goes here -->
+    </div>
+    <div class="text-box">
+        <h1 class="scientific-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.</h1>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Select the element
+            const textBox = document.querySelector('.text-box');
+        
+            // Uncomment the line below depending on the animation you want to use
+            // textBox.classList.add('fade-in'); // For fade-in animation
+            textBox.classList.add('slide-in'); // For slide-in animation
+        });
+    </script>
+    
+        
+    
+</body>
+</html>
